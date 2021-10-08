@@ -10,6 +10,18 @@
       "StackName": "amplify-amplifystripedemo-dev-130808",
       "StackId": "arn:aws:cloudformation:us-west-2:055345086115:stack/amplify-amplifystripedemo-dev-130808/77393270-2873-11ec-8a54-021971c5004f",
       "AmplifyAppId": "d1uff8m23b4esx"
+    },
+    "categories": {
+      "function": {
+        "amplifystripedemo": {
+          "secretsPathAmplifyAppId": "d1uff8m23b4esx",
+          "deploymentBucketName": "amplify-amplifystripedemo-dev-130808-deployment",
+          "s3Key": "amplify-builds/amplifystripedemo-6c55702b79446c4d6857-build.zip"
+        }
+      },
+      "auth": {
+        "cognito040f6f59": {}
+      }
     }
   }
 }

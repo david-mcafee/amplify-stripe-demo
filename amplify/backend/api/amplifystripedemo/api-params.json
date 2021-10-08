@@ -1,0 +1,49 @@
+{
+  "paths": [
+    {
+      "name": "/checkout",
+      "lambdaFunction": "amplifystripedemo",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/checkout"
+    }
+  ],
+  "resourceName": "amplifystripedemo",
+  "apiName": "amplifystripedemo",
+  "functionArns": [
+    {
+      "lambdaFunction": "amplifystripedemo"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-amplifystripedemo-dev-130808-authRole",
+    "unAuthRoleName": "amplify-amplifystripedemo-dev-130808-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "amplifystripedemo",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
